@@ -1,8 +1,8 @@
-import { handler } from "./index"
+// require: { handler } from "./index"
+const { handler } = require("./index");
 
 describe("Get User Preferences API Endpoint", () => {
     it("Should run a passing test", () => {
-        expect(5).toEqual(5);
-    })
-
-})
+        // ...
+    });
+});

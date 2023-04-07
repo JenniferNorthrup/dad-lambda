@@ -5,14 +5,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "pwd && cd demo-api/functions/get-user-preferences && node index.js",
+    "test": "jest --detectOpenHandles",
+    "start": "pwd && cd demo-api/functions/get-user-preferences && node index.cjs",
     "build": "echo \"BUILD\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1352.0",
     "jest": "^29.5.0"
   }
 }
